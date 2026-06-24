@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="portifolio.css">
+</head>
+<body>
+    <!-- TÍTULO -->
+    <div id="header">
+        <section id="logo">
+            <h1>Portifólio</h1>
+        </section>
+     
+        <!-- NAVEGAÇÃO TOPO -->
+        <section id="menu">
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portifolio">Portifólio</a>
+            <a href="#contato">Contato</a>
+        </section>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+     <div id="content">
+        <!-- SEÇÃO: SOBRE MIM -->
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Olá! Meu nome é João Henrique Vezzaro. A curiosidade em entender como o mundo e as engrenagens das coisas funcionam foi o principal combustível que me trouxe para o curso de Análise e Desenvolvimento de Sistemas (ADS). Além de ser uma área extremamente ampla e com excelente empregabilidade, a flexibilidade de buscar vagas em formato home office encaixa perfeitamente com os meus objetivos de carreira. Atualmente, divido a minha rotina estudando e trabalhando à noite como recepcionista ambulatorial em um hospital. Lidar com o público em situações de alta pressão me ensinou a ter um forte controle emocional e a escolher muito bem as palavras na hora de contornar problemas. Embora a minha prática com programação ainda esteja concentrada nos desafios acadêmicos da UNINTER, estou construindo este portfólio justamente como o ponto de partida para criar e hospedar meus primeiros projetos autorais de forma independente.</p>
+            <p>O meu lado analítico e focado em dados também se reflete no meu lazer. Desde 2020, me tornei um grande fã de automobilismo, expandindo meu interesse da Fórmula 1 para categorias como Stock Car, Endurance Brasil, DTM, WEC, Nascar e IndyCar. O que mais me fascina nas pistas é o pacote completo: a velocidade, a imprevisibilidade e as estratégias complexas, especialmente em corridas multiclasse. Mesmo pilotando no controle — o que traz uma experiência física limitada —, gosto de observar a sensibilidade e o comportamento de cada carro, percebendo como pequenos ajustes alteram a dinâmica na pista. No horizonte de longo prazo, tenho o grande sonho de unir essa paixão à tecnologia, trabalhando com análise de dados em uma equipe de corrida ou, quem sabe, decodificando dados de satélites em uma agência espacial.</p>
+        </section>
+        
+        <!-- SEÇÃO: FORMAÇÃO -->
+        <section id="formacao">
+            <h2>Formação</h2>
+            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas - Centro Universitário Internacional Uninter, previsto para conclusão em 12/2027;</p>
+            <p>Pacote Office (Word, Excel, PowerPoint) - SenacRS, 2025;</p>
+            <p>CS50's Introduction to Programming with Python - Harvard University, 2026;</p>
+            <p>CS50's Introduction to Artificial Intelligence with Python - Harvard University, 2026;</p>
+            <p>Português nativo e Inglês (intermediário)</p>
+        </section>
+
+        <!-- SEÇÃO: PORTFÓLIO -->
+        <section id="portifolio">
+            <h2>Portifólio</h2>
+            <p>Simulador de Classificação (conceito);</p>
+            <p>Script de Automação de Arquivos em Python (conceito);</p>
+        </section>
+
+        <!-- SEÇÃO: CONTATO -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="formulario">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+            </form>
+        </section>
+     </div> <!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+     <!-- BOTÃO DE VOLTAR AO TOPO -->
+     <a href="#" id="btn-topo" title="Voltar ao topo">&#9650;</a>
+
+     <!-- SCRIPT -->
+    <script>
+        const formulario = document.getElementById('formulario');
+        if (formulario) {
+            formulario.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const nome = document.querySelector('input[type="text"]').value;
+                alert(`Obrigado, ${nome}! Sua mensagem foi enviada com sucesso.`);
+                formulario.reset();
+            });
+        }
+    </script>
+</body>
+</html>
